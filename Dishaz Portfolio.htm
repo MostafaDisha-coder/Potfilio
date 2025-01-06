@@ -1,6 +1,7 @@
 <!DOCTYPE html>
-<html lang="en"><head>
-<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<html lang="en">
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Jane Doe Portfolio</title>
@@ -19,7 +20,7 @@
 
         header {
             background-color: #6A1B9A;
-            color: #blue;
+            color: #fff;
             padding: 20px;
             display: flex;
             justify-content: space-between;
@@ -111,21 +112,18 @@
 
     <section id="about">
         <div class="intro">
-            <img src="Dishaz%20Portfolio_files/3d-render-avatar-character_23-2150611765.avif" alt="Avatar" class="avatar">
-
-
+            <img src="images/3d-render-avatar-character_23-2150611765.avif" alt="Avatar" class="avatar">
             <h2>Hi, I'm Mostafa Magdy!</h2>
-            <p>I am a fresh graduate front-end developer looking for an opportunity to travel abroad </p>
-
+            <p>I am a fresh graduate front-end developer looking for an opportunity to travel abroad.</p>
         </div>
     </section>
 
     <section id="skills">
         <h2>Skills</h2>
         <div class="skills-container">
-            <div class="skill-card">HTML <br> 2 month experience</div>
-            <div class="skill-card">JavaScript <br> 1.5 month experience</div>
-            <div class="skill-card">Java <br> 2 month experience</div>
+            <div class="skill-card">HTML <br> 2 months experience</div>
+            <div class="skill-card">JavaScript <br> 1.5 months experience</div>
+            <div class="skill-card">Java <br> 2 months experience</div>
             <div class="skill-card">React <br> 1 month experience</div>
             <div class="skill-card">Node.js <br> 1 month experience</div>
             <div class="skill-card">CSS <br> 2 years experience</div>
@@ -135,20 +133,11 @@
     <section id="projects">
         <h2>Projects</h2>
         <ul>
-            <li><strong>Portfolio Website:</strong> Designed and 
-developed a personal portfolio website for a freelancer or designer, 
-incorporating a sleek, responsive layout with interactive animations and
- an integrated contact form.</li> <br>
+            <li><strong>Portfolio Website:</strong> Designed and developed a personal portfolio website for a freelancer or designer, incorporating a sleek, responsive layout with interactive animations and an integrated contact form.</li><br>
             <hr>
-            <li><strong>Task Management App:</strong> Built a task 
-management application with features such as project creation, task 
-assignment, due dates, and real-time collaboration, utilizing a cloud 
-database for data storage and user management.</li> <br>
+            <li><strong>Task Management App:</strong> Built a task management application with features such as project creation, task assignment, due dates, and real-time collaboration, utilizing a cloud database for data storage and user management.</li><br>
             <hr>
-            <li><strong>Recipe Finder App:</strong>  Developed a recipe 
-finder mobile application where users can search for recipes based on 
-available ingredients, featuring a search API integration, user ratings,
- and customizable meal plans. </li><br>
+            <li><strong>Recipe Finder App:</strong> Developed a recipe finder mobile application where users can search for recipes based on available ingredients, featuring a search API integration, user ratings, and customizable meal plans.</li><br>
             <hr>
         </ul>
     </section>
@@ -156,39 +145,20 @@ available ingredients, featuring a search API integration, user ratings,
     <section id="recommendations">
         <h2>Recommendations</h2>
         <div class="recommendations-container">
-            <blockquote>Mostafa Focuses on personal growth by setting 
-clear, achievable goals, and regularly reflecting on your progress to 
-stay motivated and on track.</blockquote>
-            <blockquote>Enhance your communication skills by actively 
-listening to others, asking thoughtful questions, and practicing empathy
- in your interactions.</blockquote>
-            <blockquote>Prioritize time management by organizing your 
-tasks, setting priorities, and maintaining a healthy work-life balance 
-to reduce stress and improve productivity.         </blockquote>
+            <blockquote>Mostafa focuses on personal growth by setting clear, achievable goals, and regularly reflecting on your progress to stay motivated and on track.</blockquote>
+            <blockquote>Enhance your communication skills by actively listening to others, asking thoughtful questions, and practicing empathy in your interactions.</blockquote>
+            <blockquote>Prioritize time management by organizing your tasks, setting priorities, and maintaining a healthy work-life balance to reduce stress and improve productivity.</blockquote>
         </div>
 
         <div class="recommendation-form">
             <h3>Leave a Recommendation</h3>
             <form id="recommendationForm">
                 <input type="text" id="name" placeholder="Name (Optional)" value="Disha">
-                <textarea id="message" placeholder="Message">hello peer hope you give me a good rating thank you 
-</textarea>
+                <textarea id="message" placeholder="Message">Hello peer, hope you give me a good rating. Thank you!</textarea>
                 <button type="submit">Submit</button>
-               <div class="home-button-container">
-                   <div class="home-button-container">
-    <a href="#top" class="home-button">Home</a>
-</div> 
-       
-                       <div id="popup" class="popup">
-        <div class="popup-content">
-            <span class="close-btn" onclick="closePopup()">×</span>
-            <p>Thank you for submitting a recommendation!</p>
-        </div> 
-       
-    </div>
-            
-        </div></form>
-    </div></section>
+            </form>
+        </div>
+    </section>
 
     <script>
         document.getElementById("recommendationForm").addEventListener("submit", function(event) {
@@ -201,7 +171,6 @@ to reduce stress and improve productivity.         </blockquote>
                 const recommendationContainer = document.querySelector(".recommendations-container");
                 const newRecommendation = document.createElement("blockquote");
                 newRecommendation.textContent = `${message} - ${name}`;
-                
                 recommendationContainer.appendChild(newRecommendation);
                 document.getElementById("recommendationForm").reset();
             } else {
@@ -209,6 +178,5 @@ to reduce stress and improve productivity.         </blockquote>
             }
         });
     </script>
-
-
-</body></html>
+</body>
+</html>
